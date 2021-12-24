@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Allan Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Allan-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Allan Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Allan-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OstrichSans Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/OstrichSans-Black.otf");
+}
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: "Montserrat Medium";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Montserrat Medium";
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+  color: var(--white);
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #EBEB5E;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: black;
+  font-size: 12px;
+  background-color: var(--light-yellow);
+}
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}

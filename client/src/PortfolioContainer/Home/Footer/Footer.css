@@ -1,0 +1,67 @@
+.footer-container {
+  height: 17.8%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.foorer-parent {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+}
+.footer-parent img {
+  max-width: 100%;
+  height: 130px;
+}
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .footer-parent {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 475px) {
+  .scroll-container {
+    margin-bottom: 10px;
+  }
+}
+.scroll-container {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  margin-right: 9px;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: 2950px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.btn-scroll {
+  width: 50px;
+  height: 50px;
+  color: darkgrey;
+  font-size: 24px;
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  border: none;
+}
+.btn-scroll i:hover {
+  transform: rotate(360deg);
+  color: aliceblue;
+}
+
+.btn-scroll i {
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
+}
+@keyframes mover {
+  100% {
+    transform: translateY(-5px);
+  }
+  0% {
+    transform: translateX(0px);
+  }
+}
